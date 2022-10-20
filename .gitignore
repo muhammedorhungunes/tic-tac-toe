@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# tailwindcss
+tailwind.config.js
+postcss.config.js
+
+#package
+package-lock.josn

@@ -1,3 +1,54 @@
+<!-- ![alt text](https://github.com/[muhammedorhungunes]/[tic-tac-toe]/tic-tac-toe/[master]/img/screenshotapplicationview.png?raw=true) -->
+<!-- ![alt text](img/screenshotapplicationview.png?raw=true) -->
+# Development A JavaScript library for Tic-Tac-Toe Application Review
+
+<img src="img/screenshotapplicationview.png?raw=true" width="50%" height="50%">
+
+## Install node_modules from React App
+
+Running React App must install node packages. 
+
+### `npm install`
+
+Install node_modules packages.
+
+## Using Tailwind CSS from React App 
+
+This project was CSS framework packed  with [Install Tailwind CSS](https://github.com/facebook/create-react-app).
+
+### `npx tailwindcss init -p`
+
+Install [tailwindcss](tailwindcss) and its peer dependencies via npm, and then run the init command to generate both [tailwind.config.js](tailwind.config.js) and [postcss.config.js](postcss.config.js).
+
+### `npx tailwindcss init -p`
+
+Install [postcss.config.js](postcss.config.js).
+
+### `Configure your template paths`
+
+Add the paths to all of your template files in your [tailwind.config.js](tailwind.config.js) file.
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    ["./src/**/*.{js,jsx,ts,tsx}"](./src/**/*.{js,jsx,ts,tsx}),
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}.
+
+### `Add the Tailwind directives to your CSS`
+
+Add the [@tailwind](@tailwind) directives for each of Tailwind’s layers to your [./src/index.css](./src/index.css) file.
+
+/** index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +119,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# tic-tac-toe
