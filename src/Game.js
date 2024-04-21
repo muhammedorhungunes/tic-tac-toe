@@ -48,20 +48,33 @@ class Game extends React.Component {
 
     const moves = history.map((step, move) => {
       const desc = move ?
-        'Go to move #' + move :
-        'Go to game start';
+        'Hamle #' + move :
+        'Oyuna başla';
       return (
         <li key={move}>
-          <button onClick={() => this.jumpTo(move)}>{desc}</button>
+          <button onClick={() => this.jumpsTo(move)}>{desc}</button>
         </li>
       );
     });
 
     let status;
     if (winner) {
-      status = "Winner: " + winner;
+      status = "Kazanan: " + winner;
     } else {
-      status = "Next player: " + (this.state.xIsNext ? "X" : "O");
+      status = "Bir sonraki oyuncu: " + (this.state.xIsNext ? "X" : "O");
+    }
+
+   const  restart = () => {
+    console.log("hello world")
+    this.setState({
+      history: [
+        {
+          squares: Array(9).fill(null)
+        }
+      ],
+      stepNumber: 0,
+      xIsNext: true
+    });
     }
 
     return (
@@ -75,6 +88,7 @@ class Game extends React.Component {
         <div className="m-8">
           <div>{status}</div>
           <ol>{moves}</ol>
+          <button onClick={() => {restart()}}>{"Tekrar Başla"}</button>
         </div>
       </div>
     );
